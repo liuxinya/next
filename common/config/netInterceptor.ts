@@ -2,7 +2,7 @@ import {AxiosResponse, AxiosRequestConfig} from 'axios';
 import {Injectable} from '@baidu/ioc';
 import {message} from 'antd';
 import {isNill, isObject} from '@baidu/bce-helper';
-import {ResponseObj} from '../interface/common';
+import {ResponseObj} from '@baidu/bce-services';
 import {getLoginUrl} from '../helper/page';
 @Injectable()
 export class UNetInterceptor implements UInterceptor {
