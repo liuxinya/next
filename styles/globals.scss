@@ -1,0 +1,65 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* reset */
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, em, img, b, u, i, q,
+dl, dt, dd, ol, ul, li,
+article, aside, footer,
+menu, header, nav, section {
+	margin: 0;
+	padding: 0;
+  text-decoration: none;
+	font-style: normal;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, footer, header, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+	content: none;
+}
+
+.width1180-center {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+
+.clearfix {
+  zoom: 1;
+
+  &::after {
+      content: '';
+      display: block;
+      height: 0;
+      line-height: 0;
+      font-size: 0;
+      clear: both;
+  }
+}
+
+$btn-bg-color: #2468f2;
+$btn-hover-bg-color: #108CEE;

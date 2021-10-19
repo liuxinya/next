@@ -1,0 +1,195 @@
+/**
+ * banner样式
+*/
+
+@import '../../css/util.less';
+
+@h: 440px;
+
+.banner {
+    height: @h;
+    position: relative;
+
+    .slider {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: @h;
+        z-index: 1;
+
+        a {
+            display: none;
+            width: 100%;
+            height: @h;
+            background: no-repeat center;
+            background-size: auto 100%;
+
+            &.current {
+                display: block;
+            }
+
+            >div {
+                height: 100%;
+            }
+        }
+
+        .title {
+            padding-top: 132px;
+            font-size: 38px;
+            color: #FFFFFF;
+            line-height: 58px;
+            font-weight: 500;
+        }
+
+        .desc {
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            color: #FFFFFF;
+            line-height: 30px;
+            margin-top: 4px;
+        }
+
+        .black {
+            .title, .desc {
+                color: #2e3341;
+            }
+        }
+
+        .btn {
+            display: block;
+            width: 110px;
+            height: 32px;
+            box-sizing: border-box;
+            margin-top: 36px;
+            background: #2468F2;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #fff;
+            line-height: 32px;
+            text-align: center;
+            transition: .2s all ease-in-out;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+        .sesstion-bg {
+            width: 100%;
+            height: 100%;
+            background: no-repeat center/cover;
+            animation: imgMove 1s linear forwards;
+        }
+    }
+
+    .tab-bar {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        margin-left: -590px;
+        height: 3px;
+        text-align: center;
+        
+        li {
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            width: 40px;
+            height: 3px;
+            background-color: rgba(255, 255, 255, 0.11);
+            margin-right: 4px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            span {
+                display: block;
+                width: 0;
+                height: 3px;
+            }
+
+            &.current {
+                span {
+                    background-color: rgba(255, 255, 255, 0.56);
+                    animation: widthBigger 3s linear forwards;
+                }
+            }
+        }
+        &.dark {
+            li {
+                background: rgba(97, 104, 129, 0.11);
+            }
+            &.current {
+                span {
+                    background-color: rgba(97, 104, 129, 0.56);
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .switch-btn-group {
+            display: block;
+        }
+    }
+
+    .switch-btn-group {
+        display: none;
+        position: absolute;
+        top: 196px;
+        left: 0;
+        right: 0;
+        z-index: 9;
+
+        .switch-btn {
+            position: absolute;
+            width: 49px;
+            height: 49px;
+            top: 0;
+            cursor: pointer;
+            background: url(../../assets/imgs/btn-left.png) no-repeat center/49px 49px;
+
+            &.btn-left {
+                left: -70px;
+            }
+
+            &.btn-right {
+                right: -70px;
+                transform: rotate(180deg);
+            }
+        }
+
+        @media screen and (max-width: 1300px) {
+            .switch-btn {
+                &.btn-left {
+                    left: -30px;
+                }
+    
+                &.btn-right {
+                    right: -30px;
+                }
+            }
+        }
+    }
+
+    .marketing-bit-wrapper {
+        position: relative;
+        height: @h;
+    }
+}
+
+@keyframes widthBigger {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40px;
+    }
+}
+
+@keyframes imgMove {
+    0% {transform: translateY(50px)}
+    100% {transform: translateY(0)}
+}

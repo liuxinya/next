@@ -1,0 +1,48 @@
+
+// 三角形公用代码
+.sjx(@_, @color, @size) {
+    width: 0;
+    left: 0;
+    display: block;
+    border: @size solid transparent;
+}
+// 左三角形
+.sjx(l, @color, @size) {
+    border-left-color: @color;
+}
+// 右三角形
+.sjx(r, @color, @size) {
+    border-right-color: @color;
+}
+// 上三角形
+.sjx(t, @color, @size) {
+    border-top-color: @color;
+}
+// 下三角形
+.sjx(b, @color, @size) {
+    border-bottom-color: @color;
+}
+
+// 箭头公用代码
+.arrow(@_, @color, @size) {
+    height: @size;
+    width: @size;
+    border-top: 1px solid @color;
+    border-right: 1px solid @color;
+}
+// > 右箭头
+.arrow(r, @color, @size) {
+    transform: rotate(45deg);
+}
+// < 左箭头
+.arrow(l, @color, @size) {
+    transform: rotate(-135deg);
+}
+// 上箭头
+.arrow(t, @color, @size) {
+    transform: rotate(-45deg);
+}
+// 下箭头
+.arrow(b, @color, @size) {
+    transform: rotate(135deg);
+}
