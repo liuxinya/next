@@ -12,13 +12,13 @@ export class UNetInterceptor implements UInterceptor {
             || config.status === 302
         ) {
             message.warning('您需要登录，即将跳转到登录页');
-            setTimeout(() => {
-                try {
-                    window.location.href = `${config.data.message.redirect}${encodeURIComponent(location.href)}`;
-                } catch {
-                    window.location.href = getLoginUrl();
-                }
-            }, 800);
+            // setTimeout(() => {
+            //     try {
+            //         window.location.href = `${config.data.message.redirect}${encodeURIComponent(location.href)}`;
+            //     } catch {
+            //         window.location.href = getLoginUrl();
+            //     }
+            // }, 800);
         }
         // gobal报错
         if (!config.data.success && config.data.message && config.data.message.global) {

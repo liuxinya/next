@@ -13,7 +13,7 @@ export function isProdOnline(): boolean {
 // 沙盒环境 + cms沙盒环境数据
 export function isSandBoxOnlineAndGetSourceFromCmsSandbox(): boolean {
     // @ts-ignore
-    return isProd() && !isProdOnline() && getAllParamsFromUrl().source === 'cms_sandbox';
+    return false;
 }
 
 /* eslint-disable max-len */
