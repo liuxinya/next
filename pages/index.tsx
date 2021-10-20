@@ -1,6 +1,5 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
+import Head from 'next/head';
+import styles from '../styles/Home.module.scss';
 import {IndexBanner} from '../common/components/page/IndexBanner';
 
 function Home() {
@@ -21,4 +20,4 @@ function Home() {
     );
 }
 
-export default Home
+export default Home;
