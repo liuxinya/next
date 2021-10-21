@@ -343,32 +343,32 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@baidu/bce-helper@^1.0.20":
-  version "1.0.20"
-  resolved "http://registry.npm.baidu-int.com/@baidu%2fbce-helper/-/bce-helper-1.0.20.tgz#74296843d47ebb696799ad801974fee8c002faf0"
-  integrity sha512-K6RlUcAl4YGJg7E8i/7HpKaxdAvI7BIgEuqwWPt/egptwfmxx7q5VsjVpoz2MSNmPgeNtl4V+XDI0cMdlEZYJw==
+"@baidu/bce-helper@^1.0.22":
+  version "1.0.22"
+  resolved "http://registry.npm.baidu-int.com/@baidu%2fbce-helper/-/bce-helper-1.0.22.tgz#c3032a6c58994777d10ae5030ba76523ef101fa6"
+  integrity sha512-iY4MQxJBCcePvoGwp0n07a1RFOjTFOIo8oKfCkH0crNiiH+qz2QapK0JqE07qwhgOYEKfJACdaFMqGG366srsA==
   dependencies:
     moment "^2.29.1"
 
-"@baidu/bce-hooks@^1.0.20":
-  version "1.0.20"
-  resolved "http://registry.npm.baidu-int.com/@baidu%2fbce-hooks/-/bce-hooks-1.0.20.tgz#cfaa7c19e599568e9e5a19adb0aab1bad3151300"
-  integrity sha512-/qDtShB4/KS6QEG6E7AAEl1545AisLxBRNDWyWdE5sOySEkfZPAWU0yo2KbGRnEmp5m4mTVS2Wk+pKz6lA9ynw==
+"@baidu/bce-hooks@^1.0.22":
+  version "1.0.22"
+  resolved "http://registry.npm.baidu-int.com/@baidu%2fbce-hooks/-/bce-hooks-1.0.22.tgz#b2aafb16e9b49287eabdf6a09b4151875c2ecc4c"
+  integrity sha512-OsMLgNCO1qT9pE4ZCTSA/bNc2trGUwvFNmVPdTB6Yl3KOj85q/hh0SaDTkgqAKV67ZCOr7+WPVEzxRZzpnVH6w==
   dependencies:
-    "@baidu/bce-helper" "^1.0.20"
-    "@baidu/bce-services" "^1.0.20"
+    "@baidu/bce-helper" "^1.0.22"
+    "@baidu/bce-services" "^1.0.22"
     "@baidu/ioc" "^1.0.0"
     "@types/lodash" "^4.14.165"
     "@types/react" "^17.0.0"
     "@vue/reactivity" "^3.0.11"
     react "^17.0.2"
 
-"@baidu/bce-services@^1.0.20":
-  version "1.0.20"
-  resolved "http://registry.npm.baidu-int.com/@baidu%2fbce-services/-/bce-services-1.0.20.tgz#4aa596b0b204aaa705606a60e749deca7a6a8707"
-  integrity sha512-Pp9OKXN54EoL8OdhU/vKRX/iAuVkE7z2q/VOsK+pR4pNGlWTGtZats5MNtI06z78FOJXd5eRaduNlTIbKNJu/w==
+"@baidu/bce-services@^1.0.22":
+  version "1.0.22"
+  resolved "http://registry.npm.baidu-int.com/@baidu%2fbce-services/-/bce-services-1.0.22.tgz#f53fc91599c35d790a2633bd2e0a2310ec304bb5"
+  integrity sha512-g4uOy4eI3oSt0xwHwkyYKT6Dz58znMHI0n9tLCSkHRGq/+arE8/EeusTsSRXG6+8kmy1UHW7jMq9MZPGTKOcwA==
   dependencies:
-    "@baidu/bce-helper" "^1.0.20"
+    "@baidu/bce-helper" "^1.0.22"
     "@baidu/ioc" "^1.0.0"
     "@types/react-dom" "^17.0.0"
     axios "^0.21.0"
@@ -3994,6 +3994,11 @@ pnp-webpack-plugin@1.6.4:
   integrity sha1-yXEaxNxIpoXauvyG+Lbdn434QUk=
   dependencies:
     ts-pnp "^1.1.6"
+
+postcss-pxtorem@^6.0.0:
+  version "6.0.0"
+  resolved "http://registry.npm.baidu-int.com/postcss-pxtorem/-/postcss-pxtorem-6.0.0.tgz#f228a4d05d8a73f0642eabae950e2b19836366d7"
+  integrity sha1-8iik0F2Kc/BkLquulQ4rGYNjZtc=
 
 postcss@8.2.15:
   version "8.2.15"
